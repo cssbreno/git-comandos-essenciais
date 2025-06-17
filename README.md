@@ -13,7 +13,7 @@
 
 Antes de mais nada, você sabe o que é um repositório?
 
-<span style="color: #E92D18;"><strong>Repositório</strong></span> é um local — seja na sua máquina ou online — usado para centralizar arquivos, dados e recursos de um projeto, facilitando o gerenciamento. É tipo um cofre digital: nele você guarda seus projetos, acompanha o histórico de alterações, vê quem modificou o quê, inclui a documentação do código, arquivos importantes e até o README.md, que apresenta seu projeto pra galera.
+<span><strong>Repositório</strong></span> é um local — seja na sua máquina ou online — usado para centralizar arquivos, dados e recursos de um projeto, facilitando o gerenciamento. É tipo um cofre digital: nele você guarda seus projetos, acompanha o histórico de alterações, vê quem modificou o quê, inclui a documentação do código, arquivos importantes e até o README.md, que apresenta seu projeto pra galera.
 
 <p><strong>Repositório remoto e local são a mesma coisa?</strong></p>
 
