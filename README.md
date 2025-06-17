@@ -4,12 +4,12 @@
   </a>
 </div>
 
-# 1. Primeiras configurações
+## 1. Primeiras configurações
 
 - Para definir seu nome de usuário: git config --global user.name "seu nome"
 - Para definir seu e-mail: git config --global user.email "seu.email@examplo.com"
 
-# 2. Agora, vamos criar / clonar repositórios
+## 2. Agora, vamos criar / clonar repositórios
 
 Antes de mais nada, você sabe o que é um repositório?
 
