@@ -32,12 +32,12 @@
   - [9. BÔNUS](#9-bônus)
   - [Gostou do conteúdo?](#gostou-do-conteúdo)
 
-- [🇺🇸 English](#-english)
-- [🇪🇸 Español](#-español)
+- [🇺🇸 - English](#-english)
+- [🇪🇸 - Español](#-español)
 
 ---
 
-## 🇧🇷 Português
+## 🇧🇷 - Português
 
 ### 1. Primeiras configurações
 
