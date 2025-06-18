@@ -8,13 +8,16 @@
 
 ## 🛠️ 1. Primeiras configurações
 
+
 ```bash
-# Define seu nome de usuário
+# Para definir seu nome de usuário
 git config --global user.name "seu nome"
 
-# Define seu e-mail
+# Para definir seu e-mail:
 git config --global user.email "seu.email@examplo.com"
 ````
+
+<h4>⚠️ ATENÇÃO: O Git é case sensitive viu. Se liga na hora de usar maiúsculo e minúsculo!</h4>
 
 ---
 
@@ -53,7 +56,7 @@ git clone <url_do_repositorio>
 ## 🔍 3. Ver o status e adicionar arquivos
 
 ```bash
-# Verifica o status dos arquivos
+# Confere o status dos arquivos
 git status
 
 # Adiciona um arquivo específico à área de staging
@@ -76,29 +79,29 @@ Agora que você manja do que é área de staging, bora entender o que é esse ta
 > ✍️ Um **commit** salva no histórico do projeto todas as alterações feitas, e você pode (e deve) descrever o que mudou.
 
 ```bash
-# Commit simples com mensagem
+# Commitar com mensagem? 
 git commit -m "mensagem do commit"
 
-# Adiciona e commita de uma vez (pra arquivos já rastreados)
+# Bora unir o git add . com o git commit + mensagem? 
 git commit -am "mensagem do commit"
 
-# Corrige a mensagem do último commit
+# Hmm... precisava corrigir a mensagem do ultimo commit?
 git commit --amend -m "Nova mensagem"
 ```
 
-⚠️ **Cuidado com o `--amend` se já tiver feito push**, pois ele altera o histórico.
+⚠️ **Cuidado com o `--amend` se já tiver feito push**, porque ele altera o histórico.
 
 ---
 
 ## ✅ Boas práticas de commit
 
-### ✔️ Escreva mensagens curtas, claras e no imperativo:
+### ✔️ Escreve mensagens curtas, claras e no imperativo:
 
 * `Corrige bug em produção`
 * `Resolve exercícios de POO`
 * `Atualiza título do README`
 
-### ❌ Evite mensagens genéricas:
+### ❌ Evita mensagens genéricas:
 
 * `Ajustes no código` ❌
 * `Refatora função de envio de e-mails` ✅
@@ -111,9 +114,9 @@ Esses prefixos seguem o padrão [Conventional Commits](https://www.conventionalc
 
 | Prefixo     | Quando usar                               |
 | ----------- | ----------------------------------------- |
-| `feat:`     | Nova funcionalidade                       |
+| `feat:`     | Funcionalidade nova                       |
 | `fix:`      | Correção de bug                           |
-| `docs:`     | Mudança apenas na documentação            |
+| `docs:`     | Mudança só na documentação                |
 | `refactor:` | Refatoração que não altera comportamento  |
 | `test:`     | Adição ou modificação de testes           |
 | `chore:`    | Tarefas internas (configs, dependências…) |
@@ -124,3 +127,116 @@ Quer dar uma aprofundada na coisa?
 👉 Visita o [site oficial do Conventional Commits](https://www.conventionalcommits.org), tem muita coisa bacana!
 
 ---
+
+
+### 🔄 5. Histórico dos seus commits
+
+```bash
+# Ver seus commits anteriores
+git log
+
+# Ver um commit específico
+git show <hash_do_commit>
+
+# Ver de forma mais visual, com gráfico e informações de branches
+git log --graph --oneline --decorate --all
+````
+
+💡 Esse é mamão demais, nem precisa de muita explicação! 👌
+
+---
+
+### 🌿 6. Vamo entender as branches?
+
+**Branches** são ramificações do seu projeto.
+Por padrão, tudo começa na `main` ou `master`, que é a branch principal.
+
+👉 Mas quando você quer desenvolver algo separado — sem afetar o que tá em produção — a melhor prática é **criar uma nova branch**, fazer suas alterações ali e depois **mesclar** (via `merge`) com a principal.
+
+```bash
+# Lista as branches locais e mostra qual você está
+git branch
+
+# Cria uma nova branch
+git branch <nome_da_branch>
+
+# Troca de branch
+git checkout <nome_da_branch>
+
+# Cria e já troca pra ela de uma vez
+git checkout -b <nome_da_nova_branch>
+
+# Mescla as alterações de outra branch na atual
+git merge <nome_da_branch_que_tem_as_alterações>
+
+# Exclui uma branch local (já mesclada)
+git branch -d <nome_da_branch>
+
+# Exclui uma branch local sem precisar ter mesclado (⚠️ perigoso!)
+git branch -D <nome_da_branch>
+```
+
+---
+
+### 🚀 7. Hora de mandar pro repositório remoto
+
+```bash
+# Lista os repositórios remotos vinculados
+git remote -v
+
+# Adiciona um novo repositório remoto
+git remote add origin <url_do_repositorio_remoto>
+
+# Envia os commits para a branch remota
+git push origin <nome_da_branch>
+
+# Traz alterações do repositório remoto e já mescla com seu local
+git pull origin <nome_da_branch>
+
+# Traz as alterações do repositório remoto SEM mesclar ainda
+git fetch origin <nome_da_branch>
+```
+
+---
+
+### ⏪ 8. Precisa reverter alguma cagada?
+
+⚠️ Essa parte é delicada. Usa com calma!
+
+```bash
+# Volta o HEAD pra um commit e APAGA tudo que veio depois (⚠️ irreversível)
+git reset --hard <hash_do_commit>
+
+# Faz o mesmo, mas mantém as alterações na área de staging
+git reset --soft <hash_do_commit>
+
+# Remove um arquivo da área de staging (foi adicionado por engano)
+git reset HEAD <nome_do_arquivo>
+
+# Quer desfazer alterações NÃO commitadas de um arquivo?
+git checkout -- <nome_do_arquivo>
+
+# Cria um novo commit que desfaz o commit anterior (mantém histórico)
+git revert <hash_do_commit>
+```
+
+---
+
+### 🎁 9. BÔNUS
+
+```bash
+# Comparar dois commits
+git diff <hash_1> <hash_2>
+
+# Ver a diferença entre staging e último commit
+git diff
+```
+
+🔥 Fez mudanças numa branch mas precisou correr pra outra?
+
+```bash
+# Salva temporariamente as alterações e limpa o ambiente
+git stash
+```
+
+🧠 *Dica*: O `stash` é perfeito quando você ainda **não fez commit**, mas precisa sair daquela branch sem perder o que tava fazendo.
