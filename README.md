@@ -17,6 +17,23 @@
   </a>
 </div>
 
+---
+
+## Sumário
+
+- [1. Primeiras configurações](#1-primers-configuraes)
+- [2. Agora, vamos criar / clonar repositórios](#2-agora-vamos-criar--clonar-repositrios)
+- [3. Ver o status e adicionar arquivos](#3-ver-o-status-e-adicionar-arquivos)
+- [4. Salvar (commitar) suas alterações](#4-salvar-commitar-suas-alteraes)
+- [5. Histórico dos seus commits](#5-histrico-dos-seus-commits)
+- [6. Vamo entender as branches?](#6-vamo-entender-as-branches)
+- [7. Hora de mandar pro repositório remoto](#7-hora-de-mandar-pro-repositrio-remoto)
+- [8. Precisa reverter alguma cagada?](#8-precisa-reverter-alguma-cagada)
+- [9. BÔNUS](#9-bons)
+- [Gostou do conteúdo?](#gostou-do-conteudo)
+
+---
+
 ## 🛠️ 1. Primeiras configurações
 
 
@@ -143,17 +160,17 @@ Quer dar uma aprofundada na coisa?
 ### 🔄 5. Histórico dos seus commits
 
 ```bash
-# Ver seus commits anteriores
+# Quero ver meus commits anteriores?
 git log
 
-# Ver um commit específico
+# Quero ver um commit especifico?
 git show <hash_do_commit>
 
-# Ver de forma mais visual, com gráfico e informações de branches
+# Preciso saber pra qual branch foi o commit e ver de forma mais visual?
 git log --graph --oneline --decorate --all
 ````
 
-💡 Esse é mamão demais, nem precisa de muita explicação! 👌
+ Esse tava mamão po, nem precisei explicar muita coisa 👌
 
 ---
 
@@ -165,13 +182,13 @@ Por padrão, tudo começa na `main` ou `master`, que é a branch principal.
 👉 Mas quando você quer desenvolver algo separado — sem afetar o que tá em produção — a melhor prática é **criar uma nova branch**, fazer suas alterações ali e depois **mesclar** (via `merge`) com a principal.
 
 ```bash
-# Lista as branches locais e mostra qual você está
+# Lista as branches que você tem localmente e mostra a branch atual
 git branch
 
-# Cria uma nova branch
+# E pra criar branch nova? Fácil
 git branch <nome_da_branch>
 
-# Troca de branch
+# Precisou trocar de branch?
 git checkout <nome_da_branch>
 
 # Cria e já troca pra ela de uma vez
@@ -183,7 +200,7 @@ git merge <nome_da_branch_que_tem_as_alterações>
 # Exclui uma branch local (já mesclada)
 git branch -d <nome_da_branch>
 
-# Exclui uma branch local sem precisar ter mesclado (⚠️ perigoso!)
+# Não preciso dessa branch local mais  nem vou precisar ter mesclar (⚠️ cuidado ao usar, hem!)
 git branch -D <nome_da_branch>
 ```
 
@@ -199,16 +216,16 @@ git branch -D <nome_da_branch>
 # Lista os repositórios remotos vinculados
 git remote -v
 
-# Adiciona um novo repositório remoto
+# Quer adicionar um repositório remoto?
 git remote add origin <url_do_repositorio_remoto>
 
-# Envia os commits para a branch remota
+# Adicionou o repositório remoto? Hora de enviar seus commits pra ele
 git push origin <nome_da_branch>
 
-# Traz alterações do repositório remoto e já mescla com seu local
+# Precisa trazer alterações do repositório remoto e já mesclar com seu local?
 git pull origin <nome_da_branch>
 
-# Traz as alterações do repositório remoto SEM mesclar ainda
+# E trazer as alterações do repositório remoto SEM mesclar? (ainda)
 git fetch origin <nome_da_branch>
 
 ```
@@ -220,7 +237,7 @@ git fetch origin <nome_da_branch>
 <h3>⏪ 8. Precisa reverter alguma cagada?</h3>
 <br>
 
-<p>⚠️ Essa parte é delicada. Usa com calma!</p>
+<p>Essa parte é delicada. Usa com calma!</p>
 
 ```bash
 # Volta o HEAD pra um commit e APAGA tudo que veio depois (⚠️ irreversível)
