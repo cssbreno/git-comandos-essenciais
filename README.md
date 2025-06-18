@@ -1,7 +1,18 @@
+<!-- Banner principal -->
 <div align="center">
-
-<img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100">
-  <a href="="https://git.io/typing-svg">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/d48893bd-0757-481c-8d7e-ba3e163feae7" width="100%" alt="Banner principal do guia de Git">
+</div>
+<br>
+<br>
+<br>
+<!-- Cabeçalho com animação -->
+<div align="center" style="margin-top: -20px;">
+  <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100" />
+  <br>
+  <br>
+  <br>
+  
+  <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=900&lines=Dominando+o+Git:+Seu+Guia+Essencial+Multilingue" alt="Typing SVG">
   </a>
 </div>
@@ -178,49 +189,68 @@ git branch -D <nome_da_branch>
 
 ---
 
-### 🚀 7. Hora de mandar pro repositório remoto
+<h3>🚀 7. Hora de mandar pro repositório remoto</h3>
 
-```bash
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;">
+  <div style="flex: 1;">
+
+```
 # Lista os repositórios remotos vinculados
 git remote -v
 
 # Adiciona um novo repositório remoto
-git remote add origin <url_do_repositorio_remoto>
+git remote add origin &lt;url_do_repositorio_remoto&gt;
 
 # Envia os commits para a branch remota
-git push origin <nome_da_branch>
+git push origin &lt;nome_da_branch&gt;
 
 # Traz alterações do repositório remoto e já mescla com seu local
-git pull origin <nome_da_branch>
+git pull origin &lt;nome_da_branch&gt;
 
 # Traz as alterações do repositório remoto SEM mesclar ainda
-git fetch origin <nome_da_branch>
+git fetch origin &lt;nome_da_branch&gt;
 ```
+  </div>
 
----
+  <div style="flex-shrink: 0;">
+    <img src="https://user-images.githubusercontent.com/74038190/218266069-da299265-d22b-41f5-99f1-cf8bfa951c42.gif" width="250">
+  </div>
+</div>
 
-### ⏪ 8. Precisa reverter alguma cagada?
+<hr>
 
-⚠️ Essa parte é delicada. Usa com calma!
 
-```bash
+<h3>⏪ 8. Precisa reverter alguma cagada?</h3>
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;">
+  <div style="flex: 1;">
+    <p>⚠️ Essa parte é delicada. Usa com calma!</p>
+
+<pre><code>
 # Volta o HEAD pra um commit e APAGA tudo que veio depois (⚠️ irreversível)
-git reset --hard <hash_do_commit>
+git reset --hard &lt;hash_do_commit&gt;
 
 # Faz o mesmo, mas mantém as alterações na área de staging
-git reset --soft <hash_do_commit>
+git reset --soft &lt;hash_do_commit&gt;
 
 # Remove um arquivo da área de staging (foi adicionado por engano)
-git reset HEAD <nome_do_arquivo>
+git reset HEAD &lt;nome_do_arquivo&gt;
 
 # Quer desfazer alterações NÃO commitadas de um arquivo?
-git checkout -- <nome_do_arquivo>
+git checkout -- &lt;nome_do_arquivo&gt;
 
 # Cria um novo commit que desfaz o commit anterior (mantém histórico)
-git revert <hash_do_commit>
-```
+git revert &lt;hash_do_commit&gt;
+</code></pre>
+  </div>
 
----
+  <div style="flex-shrink: 0;">
+    <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/4577b4e3-eb20-42ea-8088-c745981f3c82" width="300">
+  </div>
+</div>
+
+<hr>
+
 
 ### 🎁 9. BÔNUS
 
