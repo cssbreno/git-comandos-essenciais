@@ -33,11 +33,32 @@
   - [Gostou do conteúdo?](#gostou-do-conteúdo)
 
 - [🇺🇸 - English](#-english)
+  - [1. Initial Setup](#1-initial-setup)
+  - [2. Now, let's create / clone repositories](#2-now-lets-create--clone-repositories)
+  - [3. Check status and add files](#3-check-status-and-add-files)
+  - [4. Save (commit) your changes](#4-save-commit-your-changes)
+  - [5. Commit history](#5-commit-history)
+  - [6. Understanding branches](#6-understanding-branches)
+  - [7. Time to push to remote repository](#7-time-to-push-to-remote-repository)
+  - [8. Need to undo something?](#8-need-to-undo-something)
+  - [9. BONUS](#9-bonus)
+  - [Like the content?](#like-the-content)
+
 - [🇪🇸 - Español](#-español)
+  - [1. Primeros ajustes](#1-primeros-ajustes)
+  - [2. Ahora, vamos a crear / clonar repositorios](#2-ahora-vamos-a-crear--clonar-repositorios)
+  - [3. Ver el estado y añadir archivos](#3-ver-el-estado-y-añadir-archivos)
+  - [4. Guardar (commitear) tus cambios](#4-guardar-commitear-tus-cambios)
+  - [5. Historial de tus commits](#5-historial-de-tus-commits)
+  - [6. ¿Entendemos las branches?](#6-entendemos-las-branches)
+  - [7. Hora de mandar al repositorio remoto](#7-hora-de-mandar-al-repositorio-remoto)
+  - [8. ¿Necesitas revertir algo?](#8-necesitas-revertir-algo)
+  - [9. BÓNUS](#9-bónus)
+  - [¿Te gustó el contenido?](#te-gustó-el-contenido)
 
 ---
 
-## 🇧🇷 - Português
+## 🇧🇷 - Português {#português}
 
 ### 1. Primeiras configurações
 
@@ -254,7 +275,7 @@ Me acompanha nas redes abaixo, quem sabe eu apareço com mais. 😉
 
 ---
 
-## 🇺🇸 - English
+## 🇺🇸 - English {#english}
 
 ### 1. Initial Setup
 
@@ -275,16 +296,16 @@ git config --global user.email "your.email@example.com"
 #### What is a repository?
 
 A **repository** is a place — either on your machine or online — used to centralize files, data, and resources of a project, making management easier.
-🗃️ It’s like a digital vault: you store your projects there, track change history, see who modified what, include code documentation, important files, and even the README.md, which introduces your project to others.
+🗃️ It's like a digital vault: you store your projects there, track change history, see who modified what, include code documentation, important files, and even the README.md, which introduces your project to others.
 
 #### Are remote and local repositories the same?
 
-Good question! Let’s break it down:
+Good question! Let's break it down:
 
 * 🖥️ The **local** repository is the one on your machine.
   You know when you create a folder in VS Code or IntelliJ to practice a language? That can already be a local repository.
 
-* ☁️ If you want to push that to GitHub, you need to have the local repository first — it’s the starting point for the remote repository, which lives in the cloud.
+* ☁️ If you want to push that to GitHub, you need to have the local repository first — it's the starting point for the remote repository, which lives in the cloud.
 
 #### How to create/clone?
 
@@ -312,16 +333,16 @@ git add .
 ```
 
 💡 **What is the staging area?**
-Basically, it’s like saying: *"Ok, I want to include these changes in my next commit"*.
+Basically, it's like saying: *"Ok, I want to include these changes in my next commit"*.
 That means changes are prepared before being saved to the history.
 
 ---
 
 ### 4. Save (commit) your changes
 
-Now that you know about the staging area, let’s understand what a commit is:
+Now that you know about the staging area, let's understand what a commit is:
 
-> ✍️ A **commit** saves all changes made to the project’s history, and you can (and should) describe what changed.
+> ✍️ A **commit** saves all changes made to the project's history, and you can (and should) describe what changed.
 
 ```bash
 # Commit with a message
@@ -452,13 +473,13 @@ git diff
 git stash
 ```
 
-🧠 *Tip:* `stash` is perfect when you haven’t committed yet but need to switch branches without losing your work.
+🧠 *Tip:* `stash` is perfect when you haven't committed yet but need to switch branches without losing your work.
 
 ---
 
 ## Like the content?
 
-Follow me on the socials below, maybe I’ll bring more. 😉
+Follow me on the socials below, maybe I'll bring more. 😉
 
 <div style="display: flex; justify-content: left; gap: 20px; align-items: center; margin-top: 10px;">
   <a href="https://www.linkedin.com/in/cssbreno" target="_blank" rel="noopener">
@@ -471,7 +492,7 @@ Follow me on the socials below, maybe I’ll bring more. 😉
 
 ---
 
-## 🇪🇸 - Español
+## 🇪🇸 - Español {#español}
 
 ### 1. Primeros ajustes
 
@@ -640,7 +661,7 @@ Esta parte es delicada. ¡Usa con cuidado!
 # Vuelve el HEAD a un commit y BORRA todo lo que vino después (⚠️ irreversible)
 git reset --hard <hash_del_commit>
 
-# Igual, pero mantiene los cambios en staging
+# Igual, pero mantén los cambios en staging
 git reset --soft <hash_del_commit>
 
 # Quita un archivo del área de staging (lo agregaste por error)
@@ -649,44 +670,6 @@ git reset HEAD <nombre_del_archivo>
 # ¿Quieres deshacer cambios NO commiteados de un archivo?
 git checkout -- <nombre_del_archivo>
 
-# Crea un commit que deshace el commit anterior (mantiene historial)
+# Crea un commit que deshace el commit anterior (mantén historial)
 git revert <hash_del_commit>
 ```
-
----
-
-### 9. BÓNUS
-
-```bash
-# Comparar dos commits
-git diff <hash_1> <hash_2>
-
-# Ver diferencias entre staging y último commit
-git diff
-```
-
-🔥 ¿Hiciste cambios en una branch pero necesitas cambiar rápido a otra?
-
-```bash
-# Guarda temporalmente los cambios y limpia el entorno
-git stash
-```
-
-🧠 *Consejo:* El `stash` es perfecto cuando aún **no hiciste commit** pero necesitas salir de esa branch sin perder lo que estabas haciendo.
-
----
-
-## ¿Te gustó el contenido?
-
-Sígueme en las redes abajo, quizás traiga más contenido. 😉
-
-<div style="display: flex; justify-content: left; gap: 20px; align-items: center; margin-top: 10px;">
-  <a href="https://www.linkedin.com/in/cssbreno" target="_blank" rel="noopener">
-    <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="50" alt="Instagram"/>
-  </a>
-  <a href="https://www.instagram.com/css_breno" target="_blank" rel="noopener">
-    <img src="https://user-images.githubusercontent.com/74038190/235294013-a33e5c43-a01c-43f6-b44d-a406d8b4ab75.gif" width="50" alt="LinkedIn"/>
-  </a>
-</div>
-
----
