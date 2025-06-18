@@ -20,7 +20,7 @@
 
 # Índice / Table of Contents / Índice
 
-- [🇧🇷 Português](#-português)
+- [🇧🇷 - Português](#-português)
   - [1. Primeiras configurações](#1-primeiras-configurações)
   - [2. Agora, vamos criar / clonar repositórios](#2-agora-vamos-criar--clonar-repositórios)
   - [3. Ver o status e adicionar arquivos](#3-ver-o-status-e-adicionar-arquivos)
