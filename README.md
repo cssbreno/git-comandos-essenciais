@@ -192,7 +192,7 @@ git branch -D <nome_da_branch>
 <h3>🚀 7. Hora de mandar pro repositório remoto</h3>
 
 <p>
-  <img src="https://user-images.githubusercontent.com/74038190/218266069-da299265-d22b-41f5-99f1-cf8bfa951c42.gif" width="180" align="left" style="margin-right: 15px;" />
+  <img src="https://user-images.githubusercontent.com/74038190/218266069-da299265-d22b-41f5-99f1-cf8bfa951c42.gif" width="220" align="left" style="margin-right: 15px;" />
 </p>
 
 ```bash
@@ -218,33 +218,28 @@ git fetch origin <nome_da_branch>
 
 
 <h3>⏪ 8. Precisa reverter alguma cagada?</h3>
+<br>
 
-<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;">
-  <div style="flex: 1;">
-    <p>⚠️ Essa parte é delicada. Usa com calma!</p>
+<p>⚠️ Essa parte é delicada. Usa com calma!</p>
 
-<pre><code>
+```bash
 # Volta o HEAD pra um commit e APAGA tudo que veio depois (⚠️ irreversível)
-git reset --hard &lt;hash_do_commit&gt;
+git reset --hard <hash_do_commit>
 
 # Faz o mesmo, mas mantém as alterações na área de staging
-git reset --soft &lt;hash_do_commit&gt;
+git reset --soft <hash_do_commit>
 
 # Remove um arquivo da área de staging (foi adicionado por engano)
-git reset HEAD &lt;nome_do_arquivo&gt;
+git reset HEAD <nome_do_arquivo>
 
 # Quer desfazer alterações NÃO commitadas de um arquivo?
-git checkout -- &lt;nome_do_arquivo&gt;
+git checkout -- <nome_do_arquivo>
 
 # Cria um novo commit que desfaz o commit anterior (mantém histórico)
-git revert &lt;hash_do_commit&gt;
-</code></pre>
-  </div>
+git revert <hash_do_commit>
+```
 
-  <div style="flex-shrink: 0;">
-    <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/4577b4e3-eb20-42ea-8088-c745981f3c82" width="300">
-  </div>
-</div>
+<br clear="all"/>
 
 <hr>
 
