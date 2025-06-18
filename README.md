@@ -1,4 +1,6 @@
 <div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100">
   <a href="="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=900&lines=Dominando+o+Git:+Seu+Guia+Essencial+Multilingue" alt="Typing SVG">
   </a>
