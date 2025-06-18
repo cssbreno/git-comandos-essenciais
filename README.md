@@ -254,7 +254,7 @@ Me acompanha nas redes abaixo, quem sabe eu apareço com mais. 😉
 
 ---
 
-## 🇺🇸 -English
+## 🇺🇸 - English
 
 ### 1. Initial Setup
 
