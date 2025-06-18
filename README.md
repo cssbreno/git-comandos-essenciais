@@ -673,3 +673,26 @@ git checkout -- <nombre_del_archivo>
 # Crea un commit que deshace el commit anterior (mantén historial)
 git revert <hash_del_commit>
 ```
+---
+
+
+### 9. BÓNUS
+
+```bash
+# Comparar dos commits
+git diff <hash_1> <hash_2>
+
+# Ver diferencias entre staging y último commit
+git diff
+
+# Guarda temporalmente los cambios y limpia el entorno
+git stash
+```
+
+---
+
+## ¿Te gustó el contenido?
+
+Sígueme en las redes abajo, quizás traiga más contenido. 😉
+
+<div style="display: flex; justify-content: left; gap: 20px; align-items: center; margin-top: 10px;"> <a href="https://www.linkedin.com/in/cssbreno" target="_blank" rel="noopener"> <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="50" alt="Instagram"/> </a> <a href="https://www.instagram.com/css_breno" target="_blank" rel="noopener"> <img src="https://user-images.githubusercontent.com/74038190/235294013-a33e5c43-a01c-43f6-b44d-a406d8b4ab75.gif" width="50" alt="LinkedIn"/> </a> </div> 
