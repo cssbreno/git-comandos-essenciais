@@ -11,7 +11,7 @@
   <br>
   <br>
   <br>
-  
+
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=900&lines=Dominando+o+Git:+Seu+Guia+Essencial+Multilingue" alt="Typing SVG">
   </a>
@@ -191,31 +191,28 @@ git branch -D <nome_da_branch>
 
 <h3>🚀 7. Hora de mandar pro repositório remoto</h3>
 
-<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;">
-  <div style="flex: 1;">
+<p>
+  <img src="https://user-images.githubusercontent.com/74038190/218266069-da299265-d22b-41f5-99f1-cf8bfa951c42.gif" width="180" align="left" style="margin-right: 15px;" />
+</p>
 
-```
+```bash
 # Lista os repositórios remotos vinculados
 git remote -v
 
 # Adiciona um novo repositório remoto
-git remote add origin &lt;url_do_repositorio_remoto&gt;
+git remote add origin <url_do_repositorio_remoto>
 
 # Envia os commits para a branch remota
-git push origin &lt;nome_da_branch&gt;
+git push origin <nome_da_branch>
 
 # Traz alterações do repositório remoto e já mescla com seu local
-git pull origin &lt;nome_da_branch&gt;
+git pull origin <nome_da_branch>
 
 # Traz as alterações do repositório remoto SEM mesclar ainda
-git fetch origin &lt;nome_da_branch&gt;
-```
-  </div>
+git fetch origin <nome_da_branch>
 
-  <div style="flex-shrink: 0;">
-    <img src="https://user-images.githubusercontent.com/74038190/218266069-da299265-d22b-41f5-99f1-cf8bfa951c42.gif" width="250">
-  </div>
-</div>
+```
+<br clear="all" />
 
 <hr>
 
