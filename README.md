@@ -20,7 +20,7 @@
 
 # Índice / Table of Contents / Índice
 
-- [🇧🇷 - Português](#-português)
+- [🇧🇷 - Português](#🇧🇷---português)
   - [1. Primeiras configurações](#1-primeiras-configurações)
   - [2. Agora, vamos criar / clonar repositórios](#2-agora-vamos-criar--clonar-repositórios)
   - [3. Ver o status e adicionar arquivos](#3-ver-o-status-e-adicionar-arquivos)
@@ -32,7 +32,7 @@
   - [9. BÔNUS](#9-bônus)
   - [Gostou do conteúdo?](#gostou-do-conteúdo)
 
-- [🇺🇸 - English](#-english)
+- [🇺🇸 - English](#🇺🇸---english)
   - [1. Initial Setup](#1-initial-setup)
   - [2. Now, let's create / clone repositories](#2-now-lets-create--clone-repositories)
   - [3. Check status and add files](#3-check-status-and-add-files)
@@ -44,7 +44,7 @@
   - [9. BONUS](#9-bonus)
   - [Like the content?](#like-the-content)
 
-- [🇪🇸 - Español](#-español)
+- [🇪🇸 - Español](#🇪🇸---español)
   - [1. Primeros ajustes](#1-primeros-ajustes)
   - [2. Ahora, vamos a crear / clonar repositorios](#2-ahora-vamos-a-crear--clonar-repositorios)
   - [3. Ver el estado y añadir archivos](#3-ver-el-estado-y-añadir-archivos)
@@ -58,7 +58,7 @@
 
 ---
 
-## 🇧🇷 - Português {#português}
+## 🇧🇷 - Português
 
 ### 1. Primeiras configurações
 
@@ -275,7 +275,7 @@ Me acompanha nas redes abaixo, quem sabe eu apareço com mais. 😉
 
 ---
 
-## 🇺🇸 - English {#english}
+## 🇺🇸 - English
 
 ### 1. Initial Setup
 
@@ -492,7 +492,7 @@ Follow me on the socials below, maybe I'll bring more. 😉
 
 ---
 
-## 🇪🇸 - Español {#español}
+## 🇪🇸 - Español
 
 ### 1. Primeros ajustes
 
